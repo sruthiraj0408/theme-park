@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>CONTACT</title>
+</head>
+<body bgcolor="pink">
+<center><form name="form1">
+<p id="para1" style="background-color:grey;padding:5px" onmouseover="zoomin()"onmouseleave="zoomout()";>CONTACT US</p>
+<hr>
+Name:<input type="text" id="kkk" onblur="validate()"><br><br>
+Communication medium:
+<select id="com" onchange="mycom()">
+<option value="#">--SELECT--</option>
+<option value="Whatsapp">Whatsapp</option>
+<option value="Instagram">Instagram</option>
+<option value="Twitter">Twitter</option>
+<option value="Facebook">Facebook</option>
+</select><br><br>
+select Medium:
+<input type="text" id="red">
+<script>
+function validate()
+{
+if(document.getElementById("kkk").value=="")
+{
+document.getElementById("kkk").focus();
+}
+}
+function zoomin()
+{
+document.getElementById("para1").style.backgroundColor="grey";
+document.getElementById("para1").style.fontsize="15px";
+}
+function zoomout()
+{
+document.getElementById("para1").style.backroundColor="yellow";
+document.getElementById("para1").style.fontsize="24px";
+}
+function myCom()
+{
+let a=document.getElementById("com").value;
+if(a=="#")
+{
+alert("Invalid Medium!");
+}
+else
+{
+if(a=="MobileNumber")
+{
+document.getElementById("red").value="9843046466";
+}
+else
+{
+document.getElementById("red").value="Connected with:"+a;
+}
+}
+}
+</script></form>
+<table cellpadding="10" cellspacing="10">
+<tr>
+<td><a href="https://web.whatsapp.com/"><img src="ws.png" height="100" width="100"></a></td>
+<td><a href="https://web.instagram.com/"><img src="ins.jpg" height="100" width="100"></a></td>
+<td><a href="https://web.twitter.com/"><img src="twit.png" height="100" width="100"></a></td>
+<td><a href="https://web.facebook.com/"><img src="fb.png" height="100" width="100"></a></td>
+<td><a href="mailto:sruthiraj0408@gmail.com"><img src="mailc.png" height="100" width="100"></a></td>
+
+
+</tr>
+<td>Whatsapp</td>
+<td>Instagram</td>
+<td>Twitter</td>
+<td>facebook</td>
+<td>G-mail</td>
+</table>
+<footer>
+<center>
+<table cellspacing="15" cellpadding="15" border=0><tr><td>
+<b><a href="sruthika.html">HOME</a>
+<b><a href="contact.html">CONTACT US</a>
+<b><a href="form.html">REGISTER</a>
+</center>
+</footer>
+</body>
+</html>
+
